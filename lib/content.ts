@@ -100,7 +100,6 @@ export const eventExperience = {
     attendees: "500",
     days: "2",
     speakers: "10+",
-    workshops: "15+",
   },
 };
 
@@ -137,28 +136,16 @@ export const foundersSection = {
   subtitle: "Passionate About Your Success",
   founders: [
     {
-      name: "Founder Name 1",
-      role: "Lead Convener",
+      name: "Mary Sunmboye",
+      role: "Cofounder",
       image: "/placeholder-team-1.jpg",
-      bio: "Passionate about transforming student learning experiences",
+      bio: "First class pharmacy student with a passion for student development",
     },
     {
-      name: "Founder Name 2",
-      role: "Program Director",
+      name: "Martha Sunmboye",
+      role: "Cofounder",
       image: "/placeholder-team-2.jpg",
-      bio: "Dedicated to creating impactful educational programs",
-    },
-    {
-      name: "Founder Name 3",
-      role: "Community Lead",
-      image: "/placeholder-team-3.jpg",
-      bio: "Building a community of excellent learners",
-    },
-    {
-      name: "Founder Name 4",
-      role: "Strategy Lead",
-      image: "/placeholder-team-4.jpg",
-      bio: "Developing innovative learning strategies for students",
+      bio: "CHartered Accountant dedicated to empowering students",
     },
   ],
 };
