@@ -99,7 +99,7 @@ export const eventExperience = {
   stats: {
     attendees: "500",
     days: "2",
-    speakers: "10+",
+    speakers: "7+",
   },
 };
 
@@ -121,11 +121,11 @@ export const visionSection = {
       label: "Days of Impact",
     },
     {
-      number: "4",
+      number: "1",
       label: "Years Running",
     },
     {
-      number: "10+",
+      number: "7+",
       label: "Expert Speakers",
     },
   ],
