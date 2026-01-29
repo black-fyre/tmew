@@ -97,7 +97,7 @@ export default function Vision() {
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-purple/50 to-transparent" />
+              <div className="absolute inset-0 bg-primary-purple/30" />
             </div>
           </motion.div>
         </div>
@@ -107,7 +107,7 @@ export default function Vision() {
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="bg-gradient-to-br from-primary-orange via-primary-purple to-secondary-lavender p-8 md:p-12 rounded-2xl shadow-2xl"
+          className="bg-primary-orange p-8 md:p-12 rounded-2xl shadow-2xl"
         >
           <div className="text-center mb-12">
             <h3 className="font-retro text-3xl md:text-4xl font-bold text-white mb-4">

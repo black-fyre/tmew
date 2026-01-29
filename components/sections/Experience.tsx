@@ -61,7 +61,7 @@ export default function Experience() {
               className="object-cover group-hover:scale-110 transition-transform duration-500"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-black/40" />
             <div className="absolute bottom-6 left-6 text-white">
               <p className="text-3xl font-bold">{eventExperience.stats.attendees}</p>
               <p className="text-sm">Expected Attendees</p>
@@ -73,7 +73,7 @@ export default function Experience() {
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="md:col-span-2 bg-gradient-to-br from-primary-orange to-primary-purple p-8 rounded-2xl text-white flex flex-col justify-center"
+            className="md:col-span-2 bg-primary-orange p-8 rounded-2xl text-white flex flex-col justify-center"
           >
             <Calendar size={40} className="mb-4" />
             <p className="text-4xl font-bold mb-2">{eventExperience.stats.days}</p>
@@ -160,7 +160,7 @@ export default function Experience() {
                 className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700 card-hover"
               >
                 <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-primary-orange to-primary-purple p-3 rounded-lg flex-shrink-0">
+                  <div className="bg-primary-orange p-3 rounded-lg flex-shrink-0">
                     <Icon className="text-white" size={24} />
                   </div>
                   <div>
@@ -182,7 +182,7 @@ export default function Experience() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 1.2 }}
-          className="mt-12 bg-gradient-to-r from-primary-orange via-primary-purple to-primary-orange p-8 md:p-12 rounded-2xl text-white text-center relative overflow-hidden"
+          className="mt-12 bg-primary-purple p-8 md:p-12 rounded-2xl text-white text-center relative overflow-hidden"
         >
           <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-20" />
           <div className="relative z-10">

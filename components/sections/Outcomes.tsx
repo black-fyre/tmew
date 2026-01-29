@@ -79,18 +79,18 @@ export default function Outcomes() {
 
                   {/* Icon/Arrow */}
                   <div className="flex items-center justify-center">
-                    <div className="hidden md:block bg-gradient-to-r from-primary-orange to-primary-purple p-4 rounded-full group-hover:scale-110 transition-transform duration-300">
+                    <div className="hidden md:block bg-primary-orange p-4 rounded-full group-hover:scale-110 transition-transform duration-300">
                       <ArrowRight className="text-white" size={24} />
                     </div>
-                    <div className="md:hidden bg-gradient-to-r from-primary-orange to-primary-purple p-3 rounded-full rotate-90">
+                    <div className="md:hidden bg-primary-orange p-3 rounded-full rotate-90">
                       <ArrowRight className="text-white" size={20} />
                     </div>
                   </div>
 
                   {/* After */}
-                  <div className="bg-gradient-to-br from-primary-orange/10 to-primary-purple/10 dark:from-primary-orange/20 dark:to-primary-purple/20 p-6 rounded-xl border-2 border-primary-orange dark:border-primary-purple">
+                  <div className="bg-secondary-peach dark:bg-primary-orange/20 p-6 rounded-xl border-2 border-primary-orange dark:border-primary-purple">
                     <div className="flex items-center gap-3">
-                      <div className="bg-gradient-to-br from-primary-orange to-primary-purple p-2 rounded-lg flex-shrink-0">
+                      <div className="bg-primary-orange p-2 rounded-lg flex-shrink-0">
                         <Icon className="text-white" size={20} />
                       </div>
                       <p className="text-gray-900 dark:text-white font-semibold">
@@ -161,7 +161,7 @@ export default function Outcomes() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 1 }}
-          className="bg-gradient-to-r from-primary-orange via-primary-purple to-primary-orange bg-[length:200%_100%] animate-gradient-x p-8 md:p-12 rounded-2xl text-white text-center"
+          className="bg-primary-orange p-8 md:p-12 rounded-2xl text-white text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
             Your Transformation Awaits

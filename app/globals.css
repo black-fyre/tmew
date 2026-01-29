@@ -51,24 +51,14 @@ body {
   background: var(--primary-orange);
 }
 
-/* Gradient text utility */
+/* Solid color text utility */
 .gradient-text {
-  background: linear-gradient(135deg, var(--primary-orange), var(--primary-purple));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-orange);
 }
 
-/* Animated gradient background */
+/* Solid background */
 .gradient-bg {
-  background: linear-gradient(
-    135deg,
-    var(--primary-orange),
-    var(--primary-purple),
-    var(--secondary-lavender)
-  );
-  background-size: 400% 400%;
-  animation: gradient-xy 15s ease infinite;
+  background: var(--primary-orange);
 }
 
 /* Glass morphism effect */
@@ -86,7 +76,7 @@ body {
 
 /* Button styles */
 .btn-primary {
-  @apply bg-gradient-to-r from-primary-orange to-primary-purple text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 animate-pulse-glow;
+  @apply bg-primary-orange text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-2xl hover:bg-[#ff6b35] transform hover:scale-105 transition-all duration-300;
 }
 
 .btn-secondary {

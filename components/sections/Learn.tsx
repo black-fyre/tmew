@@ -94,7 +94,7 @@ export default function Learn() {
               >
                 {/* Icon */}
                 <div className="mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary-orange to-primary-purple rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-primary-orange rounded-xl flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
                     <Icon className="text-white" size={32} />
                   </div>
                 </div>
@@ -108,7 +108,7 @@ export default function Learn() {
                 </p>
 
                 {/* Decorative Element */}
-                <div className="mt-6 h-1 w-0 bg-gradient-to-r from-primary-orange to-primary-purple rounded-full group-hover:w-full transition-all duration-500" />
+                <div className="mt-6 h-1 w-0 bg-primary-orange rounded-full group-hover:w-full transition-all duration-500" />
               </motion.div>
             );
           })}

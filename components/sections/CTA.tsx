@@ -118,7 +118,7 @@ export default function CTA() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                className="bg-gradient-to-br from-primary-orange to-primary-purple p-6 md:p-8 rounded-xl text-white text-center"
+                className="bg-primary-orange p-6 md:p-8 rounded-xl text-white text-center"
               >
                 <div className="text-4xl md:text-6xl font-bold mb-2">
                   {String(item.value).padStart(2, "0")}
@@ -188,7 +188,7 @@ export default function CTA() {
             <p className="text-gray-600 dark:text-gray-400 mb-2">
               Registration Fee
             </p>
-            <p className="text-3xl md:text-4xl font-bold gradient-text mb-4">
+            <p className="text-3xl md:text-4xl font-bold text-primary-orange mb-4">
               {ctaSection.price}
             </p>
             <div className="flex items-center justify-center gap-2 text-sm text-gray-600 dark:text-gray-400">

@@ -53,7 +53,7 @@ export default function About() {
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary-purple/50 to-transparent" />
+              <div className="absolute inset-0 bg-primary-purple/30" />
             </div>
 
             {/* Floating Card */}
@@ -104,7 +104,7 @@ export default function About() {
             <div className="grid gap-4 pt-6">
               <motion.div
                 variants={itemVariants}
-                className="bg-gradient-to-r from-primary-orange to-primary-purple p-6 rounded-xl text-white card-hover"
+                className="bg-primary-orange p-6 rounded-xl text-white card-hover"
               >
                 <div className="flex items-start gap-4">
                   <div className="bg-white/20 p-3 rounded-lg">
@@ -119,7 +119,7 @@ export default function About() {
 
               <motion.div
                 variants={itemVariants}
-                className="bg-gradient-to-r from-primary-purple to-secondary-lavender p-6 rounded-xl text-white card-hover"
+                className="bg-primary-purple p-6 rounded-xl text-white card-hover"
               >
                 <div className="flex items-start gap-4">
                   <div className="bg-white/20 p-3 rounded-lg">

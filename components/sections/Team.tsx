@@ -60,15 +60,15 @@ export default function Team() {
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   />
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  {/* Solid Overlay */}
+                  <div className="absolute inset-0 bg-black/40" />
 
                   {/* Hover Overlay */}
                   <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: hoveredCard === index ? 1 : 0 }}
                     transition={{ duration: 0.3 }}
-                    className="absolute inset-0 bg-gradient-to-br from-primary-orange/90 to-primary-purple/90 flex items-center justify-center"
+                    className="absolute inset-0 bg-primary-orange/95 flex items-center justify-center"
                   >
                     <div className="text-white text-center px-4">
                       <p className="text-sm leading-relaxed">{founder.bio}</p>
@@ -104,7 +104,7 @@ export default function Team() {
                 </div>
 
                 {/* Decorative Element */}
-                <div className="h-1 w-0 bg-gradient-to-r from-primary-orange to-primary-purple group-hover:w-full transition-all duration-500" />
+                <div className="h-1 w-0 bg-primary-orange group-hover:w-full transition-all duration-500" />
               </div>
             </motion.div>
           ))}
@@ -117,7 +117,7 @@ export default function Team() {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-primary-orange to-primary-purple p-8 md:p-12 rounded-2xl text-white">
+          <div className="bg-primary-purple p-8 md:p-12 rounded-2xl text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Want to Join Our Team?
             </h3>
