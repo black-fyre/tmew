@@ -71,7 +71,7 @@ export default function Navigation() {
             <span className={`font-retro text-2xl md:text-3xl font-bold ${
               isScrolled ? "gradient-text" : "text-white"
             }`}>
-              TMEW 2026
+              TMEW
             </span>
           </motion.div>
 

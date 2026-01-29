@@ -2,7 +2,7 @@
 // Organized by sections for easy updates
 
 export const siteMetadata = {
-  title: "The Mechanics of Learning 2.0 | TMEW 2026",
+  title: "The Mechanics of Learning 2.0 | TMEW",
   description: "Join us for The Mechanics of Learning 2.0 - A transformative student learning conference by The More Excellent Way at the University of Ibadan. March 20-21, 2026.",
   keywords: "TMEW, The More Excellent Way, The Mechanics of Learning, student conference, University of Ibadan, learning conference, student development",
 };
