@@ -12,14 +12,20 @@ import {
   Zap,
   ArrowRight,
   Quote,
+  Brain,
+  TrendingUp,
+  Shield,
 } from "lucide-react";
 
 const iconMap: { [key: string]: React.ElementType } = {
+  brain: Brain,
   calendar: Calendar,
   smile: Smile,
   "check-circle": CheckCircle,
   compass: Compass,
   zap: Zap,
+  "trending-up": TrendingUp,
+  shield: Shield,
 };
 
 export default function Outcomes() {

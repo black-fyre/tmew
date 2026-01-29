@@ -31,73 +31,73 @@ export const aboutSection = {
 
 export const learningPoints = [
   {
-    title: "The Science of Effective Learning",
-    description: "Discover evidence-based strategies that make studying more efficient and less stressful.",
+    title: "Understand How You Learn",
+    description: "Discover your personal learning style and apply it effectively to your course.",
     icon: "brain",
   },
   {
-    title: "Memory Mastery Techniques",
-    description: "Learn proven methods to retain information longer and recall it faster during exams.",
+    title: "Study Consistently Without Burnout",
+    description: "Develop sustainable study habits that prevent overwhelm and maintain momentum.",
     icon: "lightbulb",
   },
   {
-    title: "Time Management & Productivity",
-    description: "Master the art of balancing academics, social life, and personal development without burnout.",
+    title: "Manage Your Time Effectively",
+    description: "Build routines that actually work for you and fit your unique schedule.",
     icon: "clock",
   },
   {
-    title: "Overcoming Academic Anxiety",
-    description: "Build mental resilience and confidence to tackle exams and challenges with clarity.",
-    icon: "shield",
-  },
-  {
-    title: "Critical Thinking & Problem Solving",
-    description: "Develop the ability to analyze complex problems and create innovative solutions.",
+    title: "Prioritize What Matters",
+    description: "Stop wasting study hours and focus on what truly moves the needle.",
     icon: "target",
   },
   {
-    title: "Building a Growth Mindset",
-    description: "Shift from 'I can't' to 'I can learn' and unlock your full potential.",
+    title: "Handle Pressure and Setbacks",
+    description: "Build resilience to manage pressure, failure, and academic challenges with confidence.",
+    icon: "shield",
+  },
+  {
+    title: "Build Simple, Effective Systems",
+    description: "Create straightforward systems that produce consistent academic results.",
     icon: "trending-up",
   },
   {
-    title: "Study Habits That Stick",
-    description: "Create sustainable routines that turn studying from a chore into a lifestyle.",
+    title: "Use AI Correctly",
+    description: "Leverage AI to support your learning without replacing critical thinking skills.",
     icon: "book-open",
   },
 ];
 
 export const eventExperience = {
   title: "The TMEW Experience",
-  subtitle: "Two Days That Could Change Your Academic Journey",
+  subtitle: "A Two-Day Immersive Learning Experience",
   highlights: [
     {
-      title: "2-Day Intensive Program",
-      description: "Comprehensive sessions designed to transform your approach to learning",
+      title: "Multiple Expert Speakers",
+      description: "Learn from speakers across Science, Business, and Arts faculties",
     },
     {
-      title: "Expert Speakers",
-      description: "Learn from seasoned educators and successful students who've mastered the art",
+      title: "Contextualised Learning",
+      description: "Department-specific approaches to learning tailored for your field",
     },
     {
-      title: "Interactive Workshops",
-      description: "Hands-on sessions that let you practice and internalize new strategies",
+      title: "Round-Table Collaboration",
+      description: "Collaborative environment where you learn with and from peers",
     },
     {
-      title: "Community of Learners",
-      description: "Connect with like-minded students committed to academic excellence",
+      title: "Food & Refreshments",
+      description: "Stay energized with provided meals and refreshments throughout",
     },
     {
       title: "₦50,000 Grand Prize",
-      description: "Compete for amazing prizes including cash rewards and learning resources",
+      description: "Compete with your team for the grand prize of ₦50,000",
     },
     {
-      title: "Free Learning Materials",
-      description: "Take home exclusive study guides, templates, and resources",
+      title: "Take-Home Resources",
+      description: "Exclusive materials and resources to continue your learning journey",
     },
   ],
   stats: {
-    attendees: "500+",
+    attendees: "500",
     days: "2",
     speakers: "10+",
     workshops: "15+",
@@ -106,19 +106,16 @@ export const eventExperience = {
 
 export const visionSection = {
   title: "Our Vision",
-  subtitle: "Transforming Students, One Mind at a Time",
-  content: `At TMEW, we don't just teach study techniques—we transform mindsets. We've seen
-  students go from struggling with their courses to graduating with honors. We've watched
-  freshers overcome the intimidation of university life and become confident scholars.
+  subtitle: "Beyond The Classroom",
+  content: `To give students the toolkit they need to produce consistently good results and handle academic crisis. The More Excellent Way produces excellent students. We define an excellent student as one who understands how they learn, is willing and able to combat any external obstacles to achieve their goals, and has the right mindset towards learning.
 
-  Our vision is simple but profound: to create a generation of students who approach learning
-  not as a burden, but as a privilege. Students who understand that true education isn't about
-  memorizing facts for exams, but about developing the capacity to think, create, and contribute
-  meaningfully to society.`,
+  The impact of TMEW goes beyond good grades in university. We are always learning how to produce excellent results and overcome challenges. A person with the skill of learning will find greater success in all areas of their life.
+
+  We are creating a generation of youth who take charge of their own learning—problem solvers when they face difficulties, future entrepreneurs and business leaders who can be more innovative and broaden their expertise to fit into any role because they have the skills required to facilitate their own learning. We present to you the next set of leaders that make relevant impact because they work their way through challenges.`,
   impact: [
     {
-      number: "500+",
-      label: "Students Transformed",
+      number: "500",
+      label: "Student Capacity",
     },
     {
       number: "2",
@@ -129,8 +126,8 @@ export const visionSection = {
       label: "Years Running",
     },
     {
-      number: "95%",
-      label: "Satisfaction Rate",
+      number: "10+",
+      label: "Expert Speakers",
     },
   ],
 };
@@ -167,32 +164,42 @@ export const foundersSection = {
 };
 
 export const outcomesSection = {
-  title: "What You'll Gain",
-  subtitle: "The Transformation Journey",
+  title: "The Outcome",
+  subtitle: "Indicators of Growth",
   beforeAfter: [
     {
-      before: "Struggling with time management",
-      after: "Mastering productivity and balance",
-      icon: "calendar",
+      before: "Fixed mindset about abilities",
+      after: "A mindset change - growth-oriented thinking",
+      icon: "brain",
     },
     {
-      before: "Exam anxiety and fear of failure",
-      after: "Confidence and mental resilience",
+      before: "Inconsistent grades and performance",
+      after: "Consistent good grades",
+      icon: "trending-up",
+    },
+    {
+      before: "High academic stress and anxiety",
+      after: "Reduced academic stress",
       icon: "smile",
     },
     {
-      before: "Ineffective study methods",
-      after: "Evidence-based learning strategies",
-      icon: "check-circle",
+      before: "Poor time management",
+      after: "Better time management and prioritization",
+      icon: "calendar",
     },
     {
-      before: "Feeling overwhelmed and lost",
-      after: "Clear direction and purpose",
+      before: "Unknown learning style",
+      after: "Understanding of personal learning styles",
       icon: "compass",
     },
     {
-      before: "Passive, unmotivated learner",
-      after: "Active, purposeful scholar",
+      before: "Giving up easily",
+      after: "Resilience and discipline",
+      icon: "shield",
+    },
+    {
+      before: "Defeated attitude",
+      after: "A 'can-do' spirit",
       icon: "zap",
     },
   ],
@@ -203,9 +210,9 @@ export const outcomesSection = {
       year: "2024",
     },
     {
-      text: "The strategies I learned at TMEW didn't just help me in school—they transformed my entire life.",
-      author: "Past Attendee",
-      year: "2023",
+      text: "The school is just a phase—we're shaping minds for a lifetime of success.",
+      author: "TMEW Vision",
+      year: "2026",
     },
   ],
 };
@@ -214,9 +221,9 @@ export const ctaSection = {
   title: "Ready to Transform Your Learning?",
   subtitle: "Join 500 Students on This Journey",
   eventDate: new Date("2026-03-20T09:00:00"),
-  price: "Early Bird: ₦2,500 | Regular: ₦3,500",
+  price: "Registration Opening Soon",
   cta: "Secure Your Spot",
-  urgency: "Limited slots available! Registration closes March 15th",
+  urgency: "Limited to 500 students! Registration closes March 15th",
   waitlist: "Waitlist available if sold out",
 };
 
