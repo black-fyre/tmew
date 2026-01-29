@@ -72,10 +72,20 @@ export default function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="font-retro text-5xl md:text-7xl lg:text-8xl font-bold leading-tight"
+            className="font-retro text-4xl md:text-6xl lg:text-7xl font-bold leading-tight"
           >
             {heroSection.title}
           </motion.h1>
+
+          {/* Subtitle */}
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="text-xl md:text-2xl font-light tracking-wide"
+          >
+            {heroSection.subtitle}
+          </motion.p>
 
           {/* Year */}
           <motion.div
@@ -86,16 +96,6 @@ export default function Hero() {
           >
             {heroSection.year}
           </motion.div>
-
-          {/* Theme */}
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8 }}
-            className="text-2xl md:text-4xl font-light tracking-wide"
-          >
-            {heroSection.theme}
-          </motion.p>
 
           {/* Event Details */}
           <motion.div

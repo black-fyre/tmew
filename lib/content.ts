@@ -2,15 +2,15 @@
 // Organized by sections for easy updates
 
 export const siteMetadata = {
-  title: "TMEW 2026 | The More Excellent Way",
-  description: "Join us for The More Excellent Way 2026 - A transformative student learning conference at the University of Ibadan. March 20-21, 2026.",
-  keywords: "TMEW, The More Excellent Way, student conference, University of Ibadan, learning conference, student development",
+  title: "The Mechanics of Learning 2.0 | TMEW 2026",
+  description: "Join us for The Mechanics of Learning 2.0 - A transformative student learning conference by The More Excellent Way at the University of Ibadan. March 20-21, 2026.",
+  keywords: "TMEW, The More Excellent Way, The Mechanics of Learning, student conference, University of Ibadan, learning conference, student development",
 };
 
 export const heroSection = {
-  title: "THE MORE EXCELLENT WAY",
+  title: "THE MECHANICS OF LEARNING 2.0",
   year: "2026",
-  theme: "The Mechanics of Learning 2.0",
+  subtitle: "by The More Excellent Way",
   date: "March 20th - 21st, 2026",
   venue: "University of Ibadan",
   cta: "Register Now",
@@ -18,7 +18,7 @@ export const heroSection = {
 };
 
 export const aboutSection = {
-  title: "About TMEW",
+  title: "About The More Excellent Way",
   subtitle: "A Lifestyle, Not Just an Event",
   description: `The More Excellent Way is a lifestyle. It is about producing people who understand the mechanics of learning. In life, a person is constantly learning—learning to be a better parent, learning to be a better engineer, learning to do their jobs better.
 
@@ -68,7 +68,7 @@ export const learningPoints = [
 ];
 
 export const eventExperience = {
-  title: "The TMEW Experience",
+  title: "The Event Experience",
   subtitle: "A Two-Day Immersive Learning Experience",
   highlights: [
     {
