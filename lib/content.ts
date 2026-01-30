@@ -13,7 +13,8 @@ export const heroSection = {
   subtitle: "by The More Excellent Way",
   date: "March 20th - 21st, 2026",
   venue: "University of Ibadan",
-  cta: "Register Now",
+  cta: "Secure Your Seat",
+  ctaLink: "google.com", // TODO: Replace with registration link
   scrollText: "Scroll to explore",
 };
 
