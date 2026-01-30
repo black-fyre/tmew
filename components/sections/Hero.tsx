@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ChevronDown, Calendar, MapPin, Sparkles } from "lucide-react";
+import Link from "next/link";
 import { heroSection } from "@/lib/content";
 
 export default function Hero() {
@@ -121,15 +122,13 @@ export default function Hero() {
             transition={{ delay: 1.2 }}
             className="pt-8"
           >
-            <a
-              href={heroSection.ctaLink}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/register"
               className="bg-primary-purple text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-2xl hover:bg-[#5b5fc7] transform hover:scale-105 transition-all duration-300 text-lg md:text-xl inline-flex items-center gap-3"
             >
               {heroSection.cta}
               <Sparkles size={24} />
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

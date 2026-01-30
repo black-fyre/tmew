@@ -14,7 +14,6 @@ export const heroSection = {
   date: "March 20th - 21st, 2026",
   venue: "University of Ibadan",
   cta: "Secure Your Seat",
-  ctaLink: "google.com", // TODO: Replace with registration link
   scrollText: "Scroll to explore",
 };
 
@@ -205,6 +204,23 @@ export const outcomesSection = {
   ],
 };
 
+export const registrationPage = {
+  title: "Register for TMEW 2.0",
+  subtitle: "Secure your spot at The Mechanics of Learning 2.0",
+  formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID", // TODO: Replace with your Formspree form ID
+  levels: [
+    "100 Level",
+    "200 Level",
+    "300 Level",
+    "400 Level",
+    "500 Level",
+    "Postgraduate",
+    "Other",
+  ],
+  successMessage: "You're registered! Check your email for a confirmation.",
+  errorMessage: "Something went wrong. Please try again.",
+};
+
 export const ctaSection = {
   title: "Ready to Transform Your Learning?",
   subtitle: "Join 500 Students on This Journey",
@@ -249,7 +265,7 @@ export const footerSection = {
     { label: "About", href: "#about" },
     { label: "Schedule", href: "#experience" },
     { label: "Team", href: "#team" },
-    { label: "Register", href: "#register" },
+    { label: "Register", href: "/register" },
   ],
   copyright: `© ${new Date().getFullYear()} The More Excellent Way. All rights reserved.`,
 };

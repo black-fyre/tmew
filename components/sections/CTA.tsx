@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import Link from "next/link";
 import { ctaSection } from "@/lib/content";
 import {
   Clock,
@@ -199,12 +200,9 @@ export default function CTA() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary text-lg">
+            <Link href="/register" className="btn-primary text-lg text-center">
               {ctaSection.cta}
-            </button>
-            <button className="btn-secondary text-lg">
-              Join Waitlist
-            </button>
+            </Link>
           </div>
 
           {/* Waitlist Note */}
