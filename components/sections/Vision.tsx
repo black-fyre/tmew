@@ -52,55 +52,7 @@ export default function Vision() {
     >
       <div className="container-custom">
         {/* Content Grid */}
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          {/* Content Side */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="space-y-6"
-          >
-            <div>
-              <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-                {visionSection.sectionLabel}
-              </span>
-              <div className="h-1 w-20 bg-primary-orange mt-1 rounded-full" />
-            </div>
 
-            <h2 className="font-retro text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-              {visionSection.title}
-            </h2>
-
-            <p className="text-xl text-primary-purple dark:text-primary-orange font-semibold">
-              {visionSection.subtitle}
-            </p>
-
-            <div className="prose prose-lg dark:prose-invert max-w-none">
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                {visionSection.content}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Image Side */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-              <Image
-                src={images.vision.main}
-                alt="TMEW Vision"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-primary-purple/30" />
-            </div>
-          </motion.div>
-        </div>
 
         {/* Impact Stats */}
         <motion.div

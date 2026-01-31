@@ -353,8 +353,8 @@ export const images = {
   },
   team: {
     placeholders: [
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80",
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+      "/mary.jpg",
+      "/martha.jpg",
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80",
       "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80",
     ],
