@@ -1,7 +1,7 @@
 {
   "name": "tmew-2026",
   "version": "1.0.0",
-  "description": "TMEW 2026 - The More Excellent Way Conference Website",
+  "description": "TMOL 2.0 - The More Excellent Way Conference Website",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

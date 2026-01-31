@@ -1,4 +1,4 @@
-# TMEW 2026 - The More Excellent Way Conference Website
+# TMOL 2.0 - The More Excellent Way Conference Website
 
 A modern, highly engaging promotional website for "The More Excellent Way 2026" student learning conference at the University of Ibadan.
 

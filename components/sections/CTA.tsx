@@ -72,13 +72,7 @@ export default function CTA() {
           transition={{ duration: 0.6 }}
           className="text-center max-w-4xl mx-auto mb-12"
         >
-          <div className="inline-flex items-center gap-2 bg-primary-orange/10 dark:bg-primary-orange/20 px-6 py-2 rounded-full border border-primary-orange/30 mb-6">
-            <Sparkles className="text-primary-orange" size={20} />
-            <span className="text-primary-orange font-semibold">
-              Limited Spots Available
-            </span>
-          </div>
-
+         
           <h2 className="font-retro text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             {ctaSection.title}
           </h2>

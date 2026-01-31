@@ -1,4 +1,4 @@
-// TMEW 2026 Website Content
+// TMOL 2.0 Website Content
 // Organized by sections for easy updates
 
 export const siteMetadata = {
@@ -221,9 +221,9 @@ export const ctaSection = {
   title: "Ready to Transform Your Learning?",
   subtitle: "Join 500 Students on This Journey",
   eventDate: new Date("2026-03-20T09:00:00"),
-  price: "Registration Opening Soon",
+  price: "₦2,500",
   cta: "Secure Your Spot",
-  urgency: "Limited to 500 students! Registration closes March 15th",
+  urgency: "Registration closes March 15th",
   waitlist: "Waitlist available if sold out",
 };
 

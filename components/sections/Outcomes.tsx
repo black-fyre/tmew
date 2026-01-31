@@ -168,7 +168,7 @@ export default function Outcomes() {
           </h3>
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Don&apos;t let another semester go by struggling with ineffective study
-            methods. Join TMEW 2026 and unlock your full academic potential.
+            methods. Join TMOL 2.0 and unlock your full academic potential.
           </p>
           <button
             onClick={() => {
