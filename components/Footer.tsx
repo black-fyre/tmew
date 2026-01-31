@@ -7,6 +7,7 @@ import {
   Twitter,
   Facebook,
   Youtube,
+  Linkedin,
   Mail,
   Phone,
   MapPin,
@@ -18,6 +19,7 @@ const socialIcons: { [key: string]: React.ElementType } = {
   twitter: Twitter,
   facebook: Facebook,
   youtube: Youtube,
+  linkedin: Linkedin,
 };
 
 export default function Footer() {
@@ -44,7 +46,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="font-retro text-3xl font-bold mb-4">
-              TMEW 2026
+              TMEW
             </h3>
             <p className="text-lg font-semibold mb-3">
               {footerSection.tagline}
