@@ -3,15 +3,9 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { navigationLinks, footerSection } from "@/lib/content";
 
-const navLinks = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Learn", href: "#learn" },
-  { name: "Experience", href: "#experience" },
-  { name: "Team", href: "#team" },
-  { name: "Register", href: "#register" },
-];
+const navLinks = navigationLinks;
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -71,7 +65,7 @@ export default function Navigation() {
             <span className={`font-retro text-2xl md:text-3xl font-bold ${
               isScrolled ? "gradient-text" : "text-white"
             }`}>
-              TMEW
+              {footerSection.brandName}
             </span>
           </motion.div>
 

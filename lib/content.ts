@@ -8,6 +8,7 @@ export const siteMetadata = {
 };
 
 export const heroSection = {
+  badge: "Student Learning Conference",
   title: "THE MECHANICS OF LEARNING 2.0",
   year: "2026",
   subtitle: "by The More Excellent Way",
@@ -18,15 +19,27 @@ export const heroSection = {
 };
 
 export const aboutSection = {
+  sectionLabel: "Who We Are",
   title: "About The More Excellent Way",
-  subtitle: "A Lifestyle, Not Just an Event",
-  description: `A lifestyle, not just an academic intervention.
-The More Excellent Way (TMEW) is a student-focused learning and development organisation committed to raising disciplined, intentional, and high-performing students across learning institutions.
+  subtitle: "A Lifestyle, Not just an Academic Intervention",
+  description: `The More Excellent Way (TMEW) is a student-focused learning and development organisation committed to raising disciplined, intentional, and high-performing students across learning institutions.
 TMEW is founded on a simple but powerful conviction: learning itself is a skill — one that can be trained, practised, and mastered. When students are equipped early with the right learning systems and habits, they are positioned to excel consistently throughout their academic journey and beyond.
 We design practical, student-centric interventions that move students from academic survival to sustainable excellence. Our work is grounded in the understanding that foundations matter. This is why TMEW focuses strongly on students at critical transition points — particularly secondary school students and undergraduate freshmen — where learning habits, academic identity, and self-discipline are still being formed.
 `,
   mission: "The More Excellent Way exists to help students build effective learning systems, discipline, and structure that enable consistent academic excellence and the ability to fully maximise opportunities throughout their university journey and beyond",
   vision: "To raise a generation of intentional, disciplined, and excellent learners who are academically grounded, purpose‑driven, and equipped to thrive as future professionals and leaders.",
+  missionLabel: "Our Mission",
+  visionLabel: "Our Vision",
+  statsNumber: "500+",
+  statsLabel: "Students Transformed",
+};
+
+export const learnSection = {
+  sectionLabel: "Curriculum",
+  title: "What You'll Learn",
+  subtitle: "Transform your approach to learning with these powerful concepts and strategies designed specifically for university students",
+  ctaText: "And that's just the beginning! Each session is packed with actionable insights you can apply immediately.",
+  ctaButton: "Start Your Transformation",
 };
 
 export const learningPoints = [
@@ -68,6 +81,7 @@ export const learningPoints = [
 ];
 
 export const eventExperience = {
+  sectionLabel: "The Experience",
   title: "The Event Experience",
   subtitle: "A Two-Day Immersive Learning Experience",
   highlights: [
@@ -94,12 +108,16 @@ export const eventExperience = {
   ],
   stats: {
     attendees: "500",
+    attendeesLabel: "Expected Attendees",
     days: "2",
+    daysLabel: "Days of Intensive Learning",
     speakers: "7+",
+    speakersLabel: "Expert Speakers",
   },
 };
 
 export const visionSection = {
+  sectionLabel: "Our Vision",
   title: "Our Vision",
   subtitle: "Beyond The Classroom",
   content: `To give students the toolkit they need to produce consistently good results and handle academic crisis. The More Excellent Way produces excellent students. We define an excellent student as one who understands how they learn, is willing and able to combat any external obstacles to achieve their goals, and has the right mindset towards learning.
@@ -107,27 +125,32 @@ export const visionSection = {
   The impact of TMEW goes beyond good grades in university. We are always learning how to produce excellent results and overcome challenges. A person with the skill of learning will find greater success in all areas of their life.
 
   We are creating a generation of youth who take charge of their own learning—problem solvers when they face difficulties, future entrepreneurs and business leaders who can be more innovative and broaden their expertise to fit into any role because they have the skills required to facilitate their own learning. We present to you the next set of leaders that make relevant impact because they work their way through challenges.`,
+  impactTitle: "Our Impact in Numbers",
+  impactSubtitle: "Real results from past conferences",
+  impactCta: "Join hundreds of students who have transformed their academic journey through TMEW. Your transformation story starts here.",
+  quote: "The More Excellent Way is a lifestyle",
   impact: [
     {
-      number: "500",
-      label: "Student Capacity",
+      number: "200+",
+      label: "Community Members",
     },
     {
-      number: "2",
+      number: "3",
       label: "Days of Impact",
     },
     {
       number: "1",
-      label: "Years Running",
+      label: "Year Running",
     },
     {
-      number: "7+",
+      number: "3",
       label: "Expert Speakers",
     },
   ],
 };
 
 export const foundersSection = {
+  sectionLabel: "The Team",
   title: "Meet the Team",
   subtitle: "Passionate About Your Success",
   founders: [
@@ -144,9 +167,16 @@ export const foundersSection = {
       bio: "CHartered Accountant dedicated to empowering students",
     },
   ],
+  cta: {
+    title: "Want to Join Our Team?",
+    description: "We're always looking for passionate individuals who want to make a difference in students' lives.",
+    buttonText: "Get Involved",
+    href: "https://chat.whatsapp.com/LtdvMOwnVjq67cCBefmsr2",
+  },
 };
 
 export const outcomesSection = {
+  sectionLabel: "Your Transformation",
   title: "The Outcome",
   subtitle: "Indicators of Growth",
   beforeAfter: [
@@ -186,6 +216,11 @@ export const outcomesSection = {
       icon: "zap",
     },
   ],
+  cta: {
+    title: "Your Transformation Awaits",
+    description: "Don't let another semester go by struggling with ineffective study methods. Join TMOL 2.0 and unlock your full academic potential.",
+    button: "Reserve Your Spot Now",
+  },
   testimonials: [
     {
       text: "TMEW completely changed how I approach my studies. I went from barely passing to making the Dean's List!",
@@ -221,13 +256,32 @@ export const ctaSection = {
   title: "Ready to Transform Your Learning?",
   subtitle: "Join 500 Students on This Journey",
   eventDate: new Date("2026-03-20T09:00:00"),
+  timerTitle: "Event Starts In",
+  timerSubtitle: "Don't miss out on this life-changing experience!",
+  features: [
+    { title: "Secure Your Spot", description: "Limited to 500 attendees" },
+    { title: "Join the Community", description: "Network with peers" },
+    { title: "Free Resources", description: "Take-home materials" },
+  ],
+  registrationLabel: "Registration Fee",
   price: "₦2,500",
   cta: "Secure Your Spot",
   urgency: "Registration closes March 15th",
   waitlist: "Waitlist available if sold out",
+  trustIndicators: ["Secure Payment", "Instant Confirmation", "Full Refund Available"],
 };
 
+export const navigationLinks = [
+  { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Learn", href: "#learn" },
+  { name: "Experience", href: "#experience" },
+  { name: "Team", href: "#team" },
+  { name: "Register", href: "#register" },
+];
+
 export const footerSection = {
+  brandName: "TMEW",
   tagline: "The More Excellent Way",
   description: "Transforming learning... Since 2025",
   social: [
@@ -264,6 +318,17 @@ export const footerSection = {
     { label: "Register", href: "/register" },
   ],
   copyright: `© ${new Date().getFullYear()} The More Excellent Way. All rights reserved.`,
+  quickLinksTitle: "Quick Links",
+  contactTitle: "Contact Us",
+  newsletter: {
+    title: "Stay Updated",
+    description: "Get the latest updates about TMEW events and programs",
+    placeholder: "Your email",
+    button: "Subscribe",
+  },
+  madeWith: "for students",
+  privacyPolicy: "Privacy Policy",
+  termsOfService: "Terms of Service",
 };
 
 // Image placeholders for easy replacement

@@ -68,9 +68,9 @@ export default function About() {
                   <Zap className="text-white" size={24} />
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-gray-800 dark:text-white">500+</p>
+                  <p className="text-2xl font-bold text-gray-800 dark:text-white">{aboutSection.statsNumber}</p>
                   <p className="text-sm text-gray-600 dark:text-gray-300">
-                    Students Transformed
+                    {aboutSection.statsLabel}
                   </p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ export default function About() {
           <motion.div variants={itemVariants} className="space-y-6">
             <div className="inline-block">
               <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-                Who We Are
+                {aboutSection.sectionLabel}
               </span>
               <div className="h-1 w-20 bg-primary-orange mt-1 rounded-full" />
             </div>
@@ -111,7 +111,7 @@ export default function About() {
                     <Target size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-2">Our Mission</h3>
+                    <h3 className="font-bold text-lg mb-2">{aboutSection.missionLabel}</h3>
                     <p className="text-sm opacity-90">{aboutSection.mission}</p>
                   </div>
                 </div>
@@ -126,7 +126,7 @@ export default function About() {
                     <Eye size={24} />
                   </div>
                   <div>
-                    <h3 className="font-bold text-lg mb-2">Our Vision</h3>
+                    <h3 className="font-bold text-lg mb-2">{aboutSection.visionLabel}</h3>
                     <p className="text-sm opacity-90">{aboutSection.vision}</p>
                   </div>
                 </div>

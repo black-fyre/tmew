@@ -35,7 +35,7 @@ export default function Experience() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-            The Experience
+            {eventExperience.sectionLabel}
           </span>
           <h2 className="font-retro text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
             {eventExperience.title}
@@ -64,7 +64,7 @@ export default function Experience() {
             <div className="absolute inset-0 bg-black/40" />
             <div className="absolute bottom-6 left-6 text-white">
               <p className="text-3xl font-bold">{eventExperience.stats.attendees}</p>
-              <p className="text-sm">Expected Attendees</p>
+              <p className="text-sm">{eventExperience.stats.attendeesLabel}</p>
             </div>
           </motion.div>
 
@@ -77,7 +77,7 @@ export default function Experience() {
           >
             <Calendar size={40} className="mb-4" />
             <p className="text-4xl font-bold mb-2">{eventExperience.stats.days}</p>
-            <p className="text-lg">Days of Intensive Learning</p>
+            <p className="text-lg">{eventExperience.stats.daysLabel}</p>
           </motion.div>
 
           {/* Image 2 */}
@@ -105,7 +105,7 @@ export default function Experience() {
           >
             <Mic2 size={32} className="mb-3" />
             <p className="text-3xl font-bold">{eventExperience.stats.speakers}</p>
-            <p className="text-sm">Expert Speakers</p>
+            <p className="text-sm">{eventExperience.stats.speakersLabel}</p>
           </motion.div>
 
           {/* Image 3 */}

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { learningPoints } from "@/lib/content";
+import { learnSection, learningPoints } from "@/lib/content";
 import {
   Brain,
   Lightbulb,
@@ -65,14 +65,13 @@ export default function Learn() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-            Curriculum
+            {learnSection.sectionLabel}
           </span>
           <h2 className="font-retro text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
-            What You&apos;ll Learn
+            {learnSection.title}
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300">
-            Transform your approach to learning with these powerful concepts and
-            strategies designed specifically for university students
+            {learnSection.subtitle}
           </p>
         </motion.div>
 
@@ -122,8 +121,7 @@ export default function Learn() {
           className="text-center mt-16"
         >
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-            And that&apos;s just the beginning! Each session is packed with actionable
-            insights you can apply immediately.
+            {learnSection.ctaText}
           </p>
           <button
             onClick={() => {
@@ -134,7 +132,7 @@ export default function Learn() {
             }}
             className="btn-primary"
           >
-            Start Your Transformation
+            {learnSection.ctaButton}
           </button>
         </motion.div>
       </div>

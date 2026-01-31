@@ -46,7 +46,7 @@ export default function Footer() {
             transition={{ duration: 0.6 }}
           >
             <h3 className="font-retro text-3xl font-bold mb-4">
-              TMEW
+              {footerSection.brandName}
             </h3>
             <p className="text-lg font-semibold mb-3">
               {footerSection.tagline}
@@ -84,7 +84,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.1 }}
           >
-            <h4 className="font-bold text-xl mb-6">Quick Links</h4>
+            <h4 className="font-bold text-xl mb-6">{footerSection.quickLinksTitle}</h4>
             <ul className="space-y-3">
               {footerSection.quickLinks.map((link, index) => (
                 <li key={index}>
@@ -107,7 +107,7 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h4 className="font-bold text-xl mb-6">Contact Us</h4>
+            <h4 className="font-bold text-xl mb-6">{footerSection.contactTitle}</h4>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Mail size={20} className="flex-shrink-0 mt-1" />
@@ -143,21 +143,21 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <h4 className="font-bold text-xl mb-6">Stay Updated</h4>
+            <h4 className="font-bold text-xl mb-6">{footerSection.newsletter.title}</h4>
             <p className="text-white/80 text-sm mb-4">
-              Get the latest updates about TMEW events and programs
+              {footerSection.newsletter.description}
             </p>
             <form className="space-y-3">
               <input
                 type="email"
-                placeholder="Your email"
+                placeholder={footerSection.newsletter.placeholder}
                 className="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
               />
               <button
                 type="submit"
                 className="w-full bg-white text-primary-purple font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                Subscribe
+                {footerSection.newsletter.button}
               </button>
             </form>
           </motion.div>
@@ -185,7 +185,7 @@ export default function Footer() {
             >
               <span>Made with</span>
               <Heart size={16} className="text-red-400 fill-current animate-pulse" />
-              <span>for students</span>
+              <span>{footerSection.madeWith}</span>
             </motion.div>
 
             <motion.div
@@ -196,10 +196,10 @@ export default function Footer() {
               className="flex gap-6 text-sm text-white/80"
             >
               <button className="hover:text-white transition-colors">
-                Privacy Policy
+                {footerSection.privacyPolicy}
               </button>
               <button className="hover:text-white transition-colors">
-                Terms of Service
+                {footerSection.termsOfService}
               </button>
             </motion.div>
           </div>

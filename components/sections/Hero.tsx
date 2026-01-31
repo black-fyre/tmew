@@ -65,7 +65,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 bg-black/5 backdrop-blur-sm px-6 py-2 rounded-full border border-black/10"
           >
             <Sparkles size={20} />
-            <span className="font-medium">Student Learning Conference</span>
+            <span className="font-medium">{heroSection.badge}</span>
           </motion.div>
 
           {/* Title */}

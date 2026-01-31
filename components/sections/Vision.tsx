@@ -62,7 +62,7 @@ export default function Vision() {
           >
             <div>
               <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-                Our Vision
+                {visionSection.sectionLabel}
               </span>
               <div className="h-1 w-20 bg-primary-orange mt-1 rounded-full" />
             </div>
@@ -111,10 +111,10 @@ export default function Vision() {
         >
           <div className="text-center mb-12">
             <h3 className="font-retro text-3xl md:text-4xl font-bold text-white mb-4">
-              Our Impact in Numbers
+              {visionSection.impactTitle}
             </h3>
             <p className="text-white/90 text-lg">
-              Real results from past conferences
+              {visionSection.impactSubtitle}
             </p>
           </div>
 
@@ -148,8 +148,7 @@ export default function Vision() {
             className="mt-12 text-center"
           >
             <p className="text-white text-lg md:text-xl font-light max-w-3xl mx-auto">
-              Join hundreds of students who have transformed their academic journey
-              through TMEW. Your transformation story starts here.
+              {visionSection.impactCta}
             </p>
           </motion.div>
         </motion.div>
@@ -166,8 +165,7 @@ export default function Vision() {
               &ldquo;
             </div>
             <p className="text-2xl md:text-3xl font-light text-gray-700 dark:text-gray-300 italic px-12 py-8 relative">
-              Excellence is not an act, but a habit. TMEW helps students build the
-              habits that lead to academic excellence and lifelong success.
+              {visionSection.quote}
             </p>
           </div>
         </motion.div>

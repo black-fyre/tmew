@@ -47,7 +47,7 @@ export default function Outcomes() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-            Your Transformation
+            {outcomesSection.sectionLabel}
           </span>
           <h2 className="font-retro text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
             {outcomesSection.title}
@@ -164,11 +164,10 @@ export default function Outcomes() {
           className="bg-primary-orange p-8 md:p-12 rounded-2xl text-white text-center"
         >
           <h3 className="text-3xl md:text-4xl font-bold mb-4">
-            Your Transformation Awaits
+            {outcomesSection.cta.title}
           </h3>
           <p className="text-lg md:text-xl mb-8 opacity-90 max-w-2xl mx-auto">
-            Don&apos;t let another semester go by struggling with ineffective study
-            methods. Join TMOL 2.0 and unlock your full academic potential.
+            {outcomesSection.cta.description}
           </p>
           <button
             onClick={() => {
@@ -179,7 +178,7 @@ export default function Outcomes() {
             }}
             className="bg-white text-primary-purple font-bold py-4 px-10 rounded-full hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg inline-flex items-center gap-2"
           >
-            Reserve Your Spot Now
+            {outcomesSection.cta.button}
             <ArrowRight size={20} />
           </button>
         </motion.div>

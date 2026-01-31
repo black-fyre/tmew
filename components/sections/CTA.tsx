@@ -92,11 +92,11 @@ export default function CTA() {
             <div className="flex items-center justify-center gap-2 mb-4">
               <Clock className="text-primary-orange" size={32} />
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-                Event Starts In
+                {ctaSection.timerTitle}
               </h3>
             </div>
             <p className="text-gray-600 dark:text-gray-400">
-              Don&apos;t miss out on this life-changing experience!
+              {ctaSection.timerSubtitle}
             </p>
           </div>
 
@@ -135,53 +135,32 @@ export default function CTA() {
         >
           {/* Features */}
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="flex items-start gap-3">
-              <div className="bg-green-500 p-2 rounded-lg flex-shrink-0">
-                <CheckCircle className="text-white" size={20} />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1">
-                  Secure Your Spot
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Limited to 500 attendees
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="bg-blue-500 p-2 rounded-lg flex-shrink-0">
-                <Users className="text-white" size={20} />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1">
-                  Join the Community
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Network with peers
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="bg-purple-500 p-2 rounded-lg flex-shrink-0">
-                <Sparkles className="text-white" size={20} />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-900 dark:text-white mb-1">
-                  Free Resources
-                </h4>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
-                  Take-home materials
-                </p>
-              </div>
-            </div>
+            {ctaSection.features.map((feature, index) => {
+              const icons = [CheckCircle, Users, Sparkles];
+              const colors = ["bg-green-500", "bg-blue-500", "bg-purple-500"];
+              const Icon = icons[index];
+              return (
+                <div key={index} className="flex items-start gap-3">
+                  <div className={`${colors[index]} p-2 rounded-lg flex-shrink-0`}>
+                    <Icon className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-gray-900 dark:text-white mb-1">
+                      {feature.title}
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      {feature.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           {/* Pricing */}
           <div className="text-center mb-8">
             <p className="text-gray-600 dark:text-gray-400 mb-2">
-              Registration Fee
+              {ctaSection.registrationLabel}
             </p>
             <p className="text-3xl md:text-4xl font-bold text-primary-orange mb-4">
               {ctaSection.price}
@@ -213,18 +192,12 @@ export default function CTA() {
           className="mt-12 text-center"
         >
           <div className="flex flex-wrap justify-center items-center gap-8 text-gray-600 dark:text-gray-400">
-            <div className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={20} />
-              <span>Secure Payment</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={20} />
-              <span>Instant Confirmation</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle className="text-green-500" size={20} />
-              <span>Full Refund Available</span>
-            </div>
+            {ctaSection.trustIndicators.map((indicator, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <CheckCircle className="text-green-500" size={20} />
+                <span>{indicator}</span>
+              </div>
+            ))}
           </div>
         </motion.div>
       </div>

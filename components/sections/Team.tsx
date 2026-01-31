@@ -27,7 +27,7 @@ export default function Team() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-primary-orange font-semibold text-sm tracking-wider uppercase">
-            The Team
+            {foundersSection.sectionLabel}
           </span>
           <h2 className="font-retro text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-6">
             {foundersSection.title}
@@ -119,15 +119,19 @@ export default function Team() {
         >
           <div className="bg-primary-purple p-8 md:p-12 rounded-2xl text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Want to Join Our Team?
+              {foundersSection.cta.title}
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              We&apos;re always looking for passionate individuals who want to make a
-              difference in students&apos; lives.
+              {foundersSection.cta.description}
             </p>
-            <button className="bg-white text-primary-purple font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors">
-              Get Involved
-            </button>
+            <a
+              href={foundersSection.cta.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-primary-purple font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors inline-block"
+            >
+              {foundersSection.cta.buttonText}
+            </a>
           </div>
         </motion.div>
       </div>
