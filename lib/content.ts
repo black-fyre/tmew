@@ -20,13 +20,13 @@ export const heroSection = {
 export const aboutSection = {
   title: "About The More Excellent Way",
   subtitle: "A Lifestyle, Not Just an Event",
-  description: `The More Excellent Way is a lifestyle. It is about producing people who understand the mechanics of learning. In life, a person is constantly learning—learning to be a better parent, learning to be a better engineer, learning to do their jobs better.
-
-  University is just the first place people will face certain kinds of challenges. Doubts about their intelligence, a requirement to succeed at a task they might not care about personally, before they get to the workplace and are forced to deliver on topics they might have never dealt with.
-
-  Do university right and you're launched into the world with a certain amount of character and skills that will serve you throughout life.`,
-  mission: "To give students the toolkit they need to produce consistently good results and handle academic crisis.",
-  vision: "To produce excellent students who understand how they learn, can combat obstacles, and have the right mindset towards learning.",
+  description: `A lifestyle, not just an academic intervention.
+The More Excellent Way (TMEW) is a student-focused learning and development organisation committed to raising disciplined, intentional, and high-performing students across learning institutions.
+TMEW is founded on a simple but powerful conviction: learning itself is a skill — one that can be trained, practised, and mastered. When students are equipped early with the right learning systems and habits, they are positioned to excel consistently throughout their academic journey and beyond.
+We design practical, student-centric interventions that move students from academic survival to sustainable excellence. Our work is grounded in the understanding that foundations matter. This is why TMEW focuses strongly on students at critical transition points — particularly secondary school students and undergraduate freshmen — where learning habits, academic identity, and self-discipline are still being formed.
+`,
+  mission: "The More Excellent Way exists to help students build effective learning systems, discipline, and structure that enable consistent academic excellence and the ability to fully maximise opportunities throughout their university journey and beyond",
+  vision: "To raise a generation of intentional, disciplined, and excellent learners who are academically grounded, purpose‑driven, and equipped to thrive as future professionals and leaders.",
 };
 
 export const learningPoints = [
@@ -86,10 +86,6 @@ export const eventExperience = {
     {
       title: "Food & Refreshments",
       description: "Stay energized with provided meals and refreshments throughout",
-    },
-    {
-      title: "₦50,000 Grand Prize",
-      description: "Compete with your team for the grand prize of ₦50,000",
     },
     {
       title: "Take-Home Resources",
@@ -233,17 +229,17 @@ export const ctaSection = {
 
 export const footerSection = {
   tagline: "The More Excellent Way",
-  description: "Transforming students into excellent learners since 2022",
+  description: "Transforming learning... Since 2025",
   social: [
     {
       platform: "Instagram",
-      url: "https://instagram.com/tmew_ng",
+      url: "https://instagram.com/TheMoreExcellentWay",
       icon: "instagram",
     },
     {
-      platform: "Twitter",
-      url: "https://twitter.com/tmew_ng",
-      icon: "twitter",
+      platform: "LinkedIn",
+      url: "https://linkedin.com/TheMoreExcellentWay",
+      icon: "linkedin",
     },
     {
       platform: "Facebook",
@@ -252,13 +248,13 @@ export const footerSection = {
     },
     {
       platform: "YouTube",
-      url: "https://youtube.com/@tmew_ng",
+      url: "https://youtube.com/@themoreexcellentway-31",
       icon: "youtube",
     },
   ],
   contact: {
-    email: "hello@tmew.ng",
-    phone: "+234 XXX XXX XXXX",
+    email: "themoreexcellentway31@gmail.com",
+    phone: "+234 906 921 1270",
     address: "University of Ibadan, Ibadan, Nigeria",
   },
   quickLinks: [
