@@ -128,7 +128,7 @@ export const visionSection = {
   impactTitle: "Our Impact in Numbers",
   impactSubtitle: "Real results from past conferences",
   impactCta: "Join hundreds of students who have transformed their academic journey through TMEW. Your transformation story starts here.",
-  quote: "The More Excellent Way is a lifestyle",
+  quote: "The More Excellent Way is a lifestyle, we believe that learning is a skill that can be learnt, practiced, mastered",
   impact: [
     {
       number: "200+",
@@ -342,7 +342,7 @@ export const images = {
   },
   experience: {
     gallery: [
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80",
+      "https://images.unsplash.com/photo-1634954238233-3d1445638a0e?q=80&w=800",
       "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=600&q=80",
       "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80",
       "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80",
