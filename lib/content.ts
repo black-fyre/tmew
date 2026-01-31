@@ -223,14 +223,14 @@ export const outcomesSection = {
   },
   testimonials: [
     {
-      text: "TMEW completely changed how I approach my studies. I went from barely passing to making the Dean's List!",
-      author: "Past Attendee",
-      year: "2024",
+      text: "TMEW made me realize that I am not actually dull, l've just been studying wrong and my mindset towards academics was not right, I enjoyed my time and learnt how to go about my academics the right way",
+      author: "Anuoluwa",
+      year: "2025",
     },
     {
-      text: "The school is just a phase—we're shaping minds for a lifetime of success.",
-      author: "TMEW Vision",
-      year: "2026",
+      text: "TMEW made me realize that I am not actually dull, l've just been studying wrong and my mindset towards academics was not right, I enjoyed my time and learnt how to go about my academics the right way",
+      author: "Anuoluwa",
+      year: "2025",
     },
   ],
 };
