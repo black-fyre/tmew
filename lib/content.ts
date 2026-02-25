@@ -238,7 +238,7 @@ export const outcomesSection = {
 };
 
 export const registrationPage = {
-  title: "Register for TMEW 2.0",
+  title: "Register for TMOL 2.0",
   subtitle: "Secure your spot at The Mechanics of Learning 2.0",
   sheetsEndpoint: "https://script.google.com/macros/s/AKfycbw8rCFraWdHJ-_DL-jxV-1_4jhcau6J5rWZ3RvAqRlnVe7yZFx15rSt3rCkPQ_OMkyA/exec",
   successMessage: "You're registered! Please bring ₦1,000 as the entry fee on the day. See you on March 20th at the University of Ibadan!",
