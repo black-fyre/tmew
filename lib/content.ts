@@ -240,17 +240,8 @@ export const outcomesSection = {
 export const registrationPage = {
   title: "Register for TMEW 2.0",
   subtitle: "Secure your spot at The Mechanics of Learning 2.0",
-  formUrl: "https://docs.google.com/forms/d/e/1FAIpQLSf8S4ZwX6lYIAC4-5ehjbQV2ZJmVW0Ez7CCZXrecUuDMYWzEw/viewform",
-  formEndpoint: "https://docs.google.com/forms/d/e/1FAIpQLSf8S4ZwX6lYIAC4-5ehjbQV2ZJmVW0Ez7CCZXrecUuDMYWzEw/formResponse",
-  fields: {
-    name: "entry.97100021",
-    phone: "entry.1147082427",
-    email: "entry.1217169245",
-    faculty: "entry.972590369",
-    course: "entry.1777133832",
-    expectations: "entry.73159183",
-  },
-  successMessage: "You're registered! Please bring ₦1,500 as the entry fee on the day. See you on March 20th at the University of Ibadan!",
+  sheetsEndpoint: "https://script.google.com/macros/s/AKfycbw8rCFraWdHJ-_DL-jxV-1_4jhcau6J5rWZ3RvAqRlnVe7yZFx15rSt3rCkPQ_OMkyA/exec",
+  successMessage: "You're registered! Please bring ₦1,000 as the entry fee on the day. See you on March 20th at the University of Ibadan!",
   errorMessage: "Something went wrong. Please try again.",
 };
 

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import { registrationPage, heroSection } from "@/lib/content";
 
+
 export default function RegisterForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -20,6 +21,8 @@ export default function RegisterForm() {
     phone: "",
     faculty: "",
     course: "",
+    hearAbout: "",
+    hearAboutOther: "",
     expectations: "",
   });
   const [status, setStatus] = useState<
@@ -32,24 +35,20 @@ export default function RegisterForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.SyntheticEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
 
-    const body = new URLSearchParams({
-      [registrationPage.fields.name]: formData.name,
-      [registrationPage.fields.phone]: formData.phone,
-      [registrationPage.fields.email]: formData.email,
-      [registrationPage.fields.faculty]: formData.faculty,
-      [registrationPage.fields.course]: formData.course,
-      [registrationPage.fields.expectations]: formData.expectations,
-    });
-
     try {
-      await fetch(registrationPage.formEndpoint, {
+      const payload = {
+        ...formData,
+        hearAbout: formData.hearAbout === "Other" ? formData.hearAboutOther : formData.hearAbout,
+      };
+      await fetch(registrationPage.sheetsEndpoint, {
         method: "POST",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify(payload),
         mode: "no-cors",
-        body,
       });
       setStatus("success");
     } catch {
@@ -227,6 +226,51 @@ export default function RegisterForm() {
                 placeholder="e.g. Computer Science"
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-purple focus:border-transparent outline-none transition-all"
               />
+            </div>
+
+            {/* How did you hear about us */}
+            <div>
+              <p className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">
+                How did you hear about The Mechanics of Learning?
+              </p>
+              <div className="space-y-2">
+                {["Friends", "Classmates", "Social media"].map((option) => (
+                  <label key={option} className="flex items-center gap-3 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="hearAbout"
+                      value={option}
+                      required
+                      checked={formData.hearAbout === option}
+                      onChange={handleChange}
+                      className="w-4 h-4 accent-primary-purple"
+                    />
+                    <span className="text-gray-700 dark:text-gray-300">{option}</span>
+                  </label>
+                ))}
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="radio"
+                    name="hearAbout"
+                    value="Other"
+                    checked={formData.hearAbout === "Other"}
+                    onChange={handleChange}
+                    className="w-4 h-4 accent-primary-purple"
+                  />
+                  <span className="text-gray-700 dark:text-gray-300">Other:</span>
+                  {formData.hearAbout === "Other" && (
+                    <input
+                      type="text"
+                      name="hearAboutOther"
+                      value={formData.hearAboutOther}
+                      onChange={handleChange}
+                      required
+                      placeholder="Please specify"
+                      className="flex-1 px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-purple focus:border-transparent outline-none transition-all text-sm"
+                    />
+                  )}
+                </label>
+              </div>
             </div>
 
             {/* Expectations */}
