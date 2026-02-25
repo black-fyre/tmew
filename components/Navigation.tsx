@@ -4,8 +4,9 @@ import { useState, useEffect } from "react";
 import { Menu, X, Moon, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { navigationLinks, footerSection } from "@/lib/content";
+import Link from "next/link";
 
-const navLinks = navigationLinks;
+const navLinks = navigationLinks.filter((link) => link.name !== "Register");
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -49,10 +50,8 @@ export default function Navigation() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg shadow-lg"
-            : "bg-transparent"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white dark:bg-gray-900 ${
+          isScrolled ? "shadow-lg" : ""
         }`}
       >
         <div className="container-custom flex items-center justify-between py-4 px-6">
@@ -62,9 +61,7 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center space-x-2"
           >
-            <span className={`font-retro text-2xl md:text-3xl font-bold ${
-              isScrolled ? "gradient-text" : "text-white"
-            }`}>
+            <span className="font-retro text-2xl md:text-3xl font-bold text-primary-purple">
               {footerSection.brandName}
             </span>
           </motion.div>
@@ -78,11 +75,7 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
                 onClick={() => scrollToSection(link.href)}
-                className={`font-medium transition-colors hover:text-primary-orange ${
-                  isScrolled
-                    ? "text-gray-800 dark:text-gray-200"
-                    : "text-white"
-                }`}
+                className="font-medium text-gray-800 dark:text-gray-200 transition-colors hover:text-primary-orange"
               >
                 {link.name}
               </motion.button>
@@ -91,19 +84,23 @@ export default function Navigation() {
             {/* Dark Mode Toggle */}
             <button
               onClick={() => setIsDarkMode(!isDarkMode)}
-              className={`p-2 rounded-full transition-colors ${
-                isScrolled
-                  ? "hover:bg-gray-200 dark:hover:bg-gray-700"
-                  : "hover:bg-white/20"
-              }`}
+              className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (
-                <Sun className={isScrolled ? "text-gray-800" : "text-white"} size={20} />
+                <Sun className="text-gray-800 dark:text-gray-200" size={20} />
               ) : (
-                <Moon className={isScrolled ? "text-gray-800" : "text-white"} size={20} />
+                <Moon className="text-gray-800 dark:text-gray-200" size={20} />
               )}
             </button>
+
+            {/* Register CTA */}
+            <Link
+              href="/register"
+              className="bg-primary-purple text-white font-medium py-2.5 px-6 rounded-full shadow-[0_3px_0_0_#2d3063] hover:shadow-[0_1px_0_0_#2d3063] hover:translate-y-[2px] transition-all duration-200 text-sm"
+            >
+              Register
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -114,16 +111,14 @@ export default function Navigation() {
               aria-label="Toggle dark mode"
             >
               {isDarkMode ? (
-                <Sun className={isScrolled ? "text-gray-800" : "text-white"} size={20} />
+                <Sun className="text-gray-800 dark:text-gray-200" size={20} />
               ) : (
-                <Moon className={isScrolled ? "text-gray-800" : "text-white"} size={20} />
+                <Moon className="text-gray-800 dark:text-gray-200" size={20} />
               )}
             </button>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`p-2 ${
-                isScrolled ? "text-gray-800 dark:text-white" : "text-white"
-              }`}
+              className="p-2 text-gray-800 dark:text-white"
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -155,6 +150,13 @@ export default function Navigation() {
                   {link.name}
                 </motion.button>
               ))}
+              <Link
+                href="/register"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="bg-primary-purple text-white font-medium py-3 px-8 rounded-full shadow-[0_3px_0_0_#2d3063] hover:shadow-[0_1px_0_0_#2d3063] hover:translate-y-[2px] transition-all duration-200 text-lg"
+              >
+                Register
+              </Link>
             </div>
           </motion.div>
         )}

@@ -162,8 +162,11 @@ export default function CTA() {
             <p className="text-gray-600 dark:text-gray-400 mb-2">
               {ctaSection.registrationLabel}
             </p>
-            <p className="text-3xl md:text-4xl font-bold text-primary-orange mb-4">
+            <p className="text-4xl md:text-5xl font-bold text-green-500 mb-2">
               {ctaSection.price}
+            </p>
+            <p className="text-sm font-medium text-primary-orange mb-4">
+              {ctaSection.admissionNote}
             </p>
             <div className="flex items-center justify-center gap-2 text-sm text-gray-600 dark:text-gray-400">
               <AlertCircle size={16} />

@@ -11,7 +11,9 @@ export const heroSection = {
   badge: "Student Learning Conference",
   title: "THE MECHANICS OF LEARNING 2.0",
   year: "2026",
-  subtitle: "by The More Excellent Way",
+  subtitle: "A Transformative Student Learning Conference by The More Excellent Way",
+  description:
+    "Join 500 students for a two-day immersive experience at the University of Ibadan. Learn how to build effective study systems, manage your time, and develop the discipline needed for consistent academic excellence — March 20th–21st, 2026.",
   date: "March 20th - 21st, 2026",
   venue: "University of Ibadan",
   cta: "Secure Your Seat",
@@ -248,7 +250,7 @@ export const registrationPage = {
     "Postgraduate",
     "Other",
   ],
-  successMessage: "You're registered! Check your email for a confirmation.",
+  successMessage: "You're registered! Please bring ₦1,500 as the entry fee on the day. See you on March 20th at the University of Ibadan!",
   errorMessage: "Something went wrong. Please try again.",
 };
 
@@ -259,16 +261,17 @@ export const ctaSection = {
   timerTitle: "Event Starts In",
   timerSubtitle: "Don't miss out on this life-changing experience!",
   features: [
-    { title: "Secure Your Spot", description: "Limited to 500 attendees" },
-    { title: "Join the Community", description: "Network with peers" },
-    { title: "Free Resources", description: "Take-home materials" },
+    { title: "Free to Register", description: "No payment needed to secure your spot" },
+    { title: "Join the Community", description: "Network with 500+ peers" },
+    { title: "Take-Home Resources", description: "Exclusive materials included" },
   ],
-  registrationLabel: "Registration Fee",
-  price: "₦2,500",
+  registrationLabel: "Registration is Free",
+  price: "FREE",
+  admissionNote: "₦1,500 entry fee payable on-site at the venue",
   cta: "Secure Your Spot",
-  urgency: "Registration closes March 15th",
+  urgency: "Registration closes March 15th — spots are limited",
   waitlist: "Waitlist available if sold out",
-  trustIndicators: ["Secure Payment", "Instant Confirmation", "Full Refund Available"],
+  trustIndicators: ["Free Registration", "Instant Confirmation", "Limited to 500 Seats"],
 };
 
 export const navigationLinks = [
