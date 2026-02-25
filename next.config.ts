@@ -13,15 +13,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  async redirects() {
-    return [
-      {
-        source: "/register",
-        destination: "https://selar.com/3654r66ol6",
-        permanent: false,
-      },
-    ];
-  },
 };
 
 export default nextConfig;

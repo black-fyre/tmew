@@ -18,16 +18,16 @@ export default function RegisterForm() {
     name: "",
     email: "",
     phone: "",
-    school: "",
+    faculty: "",
     course: "",
-    level: "",
+    expectations: "",
   });
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -36,18 +36,22 @@ export default function RegisterForm() {
     e.preventDefault();
     setStatus("submitting");
 
-    try {
-      const res = await fetch(registrationPage.formspreeEndpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+    const body = new URLSearchParams({
+      [registrationPage.fields.name]: formData.name,
+      [registrationPage.fields.phone]: formData.phone,
+      [registrationPage.fields.email]: formData.email,
+      [registrationPage.fields.faculty]: formData.faculty,
+      [registrationPage.fields.course]: formData.course,
+      [registrationPage.fields.expectations]: formData.expectations,
+    });
 
-      if (res.ok) {
-        setStatus("success");
-      } else {
-        setStatus("error");
-      }
+    try {
+      await fetch(registrationPage.formEndpoint, {
+        method: "POST",
+        mode: "no-cors",
+        body,
+      });
+      setStatus("success");
     } catch {
       setStatus("error");
     }
@@ -73,7 +77,7 @@ export default function RegisterForm() {
           </p>
           <Link
             href="/"
-            className="bg-primary-purple text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-2xl hover:bg-[#5b5fc7] transform hover:scale-105 transition-all duration-300 inline-flex items-center gap-2"
+            className="bg-primary-purple text-white font-bold py-3 px-8 rounded-full shadow-[0_3px_0_0_#2d3063] hover:shadow-[0_1px_0_0_#2d3063] hover:translate-y-[2px] transition-all duration-200 inline-flex items-center gap-2"
           >
             <ArrowLeft size={20} />
             Back to Home
@@ -142,10 +146,7 @@ export default function RegisterForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Full Name */}
             <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-              >
+              <label htmlFor="name" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                 Full Name
               </label>
               <input
@@ -162,10 +163,7 @@ export default function RegisterForm() {
 
             {/* Email */}
             <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-              >
+              <label htmlFor="email" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                 Email Address
               </label>
               <input
@@ -182,11 +180,8 @@ export default function RegisterForm() {
 
             {/* Phone */}
             <div>
-              <label
-                htmlFor="phone"
-                className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-              >
-                Phone Number
+              <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                Phone Number (WhatsApp)
               </label>
               <input
                 type="tel"
@@ -200,32 +195,26 @@ export default function RegisterForm() {
               />
             </div>
 
-            {/* School */}
+            {/* Faculty */}
             <div>
-              <label
-                htmlFor="school"
-                className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-              >
-                School / University
+              <label htmlFor="faculty" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                Faculty
               </label>
               <input
                 type="text"
-                id="school"
-                name="school"
+                id="faculty"
+                name="faculty"
                 required
-                value={formData.school}
+                value={formData.faculty}
                 onChange={handleChange}
-                placeholder="e.g. University of Ibadan"
+                placeholder="e.g. Science, Social Sciences, Arts"
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-purple focus:border-transparent outline-none transition-all"
               />
             </div>
 
             {/* Course */}
             <div>
-              <label
-                htmlFor="course"
-                className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-              >
+              <label htmlFor="course" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
                 Course / Department
               </label>
               <input
@@ -240,31 +229,21 @@ export default function RegisterForm() {
               />
             </div>
 
-            {/* Level */}
+            {/* Expectations */}
             <div>
-              <label
-                htmlFor="level"
-                className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
-              >
-                Level / Year
+              <label htmlFor="expectations" className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                What are your expectations for the event?
               </label>
-              <select
-                id="level"
-                name="level"
+              <textarea
+                id="expectations"
+                name="expectations"
                 required
-                value={formData.level}
+                rows={4}
+                value={formData.expectations}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-purple focus:border-transparent outline-none transition-all"
-              >
-                <option value="" disabled>
-                  Select your level
-                </option>
-                {registrationPage.levels.map((level) => (
-                  <option key={level} value={level}>
-                    {level}
-                  </option>
-                ))}
-              </select>
+                placeholder="Tell us what you hope to gain..."
+                className="w-full px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-primary-purple focus:border-transparent outline-none transition-all resize-none"
+              />
             </div>
 
             {/* Error Message */}
@@ -283,7 +262,7 @@ export default function RegisterForm() {
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="w-full bg-primary-purple text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-2xl hover:bg-[#5b5fc7] transform hover:scale-105 transition-all duration-300 text-lg disabled:opacity-60 disabled:hover:scale-100 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              className="w-full bg-primary-purple text-white font-bold py-4 px-8 rounded-full shadow-[0_4px_0_0_#2d3063] hover:shadow-[0_2px_0_0_#2d3063] hover:translate-y-[2px] transition-all duration-200 text-lg disabled:opacity-60 disabled:hover:translate-y-0 disabled:cursor-not-allowed flex items-center justify-center gap-2"
             >
               {status === "submitting" ? (
                 <>
