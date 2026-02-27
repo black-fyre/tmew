@@ -241,7 +241,21 @@ export const registrationPage = {
   title: "Register for TMOL 2.0",
   subtitle: "Secure your spot at The Mechanics of Learning 2.0",
   sheetsEndpoint: "https://script.google.com/macros/s/AKfycbw8rCFraWdHJ-_DL-jxV-1_4jhcau6J5rWZ3RvAqRlnVe7yZFx15rSt3rCkPQ_OMkyA/exec",
-  successMessage: "You're registered! Please bring ₦1,000 as the entry fee on the day. See you on March 20th at the University of Ibadan!",
+  successMessage: "You're registered! Here's how to complete your payment:",
+  paymentDetails: {
+    online: {
+      amount: "₦1,000",
+      bank: "UBA",
+      accountNumber: "2053108494",
+      accountName: "Sunmboye Martha",
+      receiptWhatsApp: "https://wa.me/2349069211270",
+    },
+    onsite: {
+      amount: "₦1,500",
+      note: "POS available on-site",
+    },
+  },
+  whatsappGroup: "https://chat.whatsapp.com/GRc6g3Fe43P4RRkk4QlVcx",
   errorMessage: "Something went wrong. Please try again.",
 };
 
@@ -327,6 +341,7 @@ export const footerSection = {
 
 // Image placeholders for easy replacement
 export const images = {
+  flyer: "/main_flyer.png", // Drop your event flyer into /public/flyer.jpg
   hero: {
     background: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1920&q=80",
     overlay: "gradient-to-br from-primary-orange/80 to-primary-purple/80",
