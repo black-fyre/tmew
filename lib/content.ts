@@ -240,7 +240,7 @@ export const outcomesSection = {
 export const registrationPage = {
   title: "Register for TMOL 2.0",
   subtitle: "Secure your spot at The Mechanics of Learning 2.0",
-  sheetsEndpoint: "https://script.google.com/macros/s/AKfycbw8rCFraWdHJ-_DL-jxV-1_4jhcau6J5rWZ3RvAqRlnVe7yZFx15rSt3rCkPQ_OMkyA/exec",
+  sheetsEndpoint: "https://script.google.com/macros/s/AKfycbxK4XctEIOIBmR7IYIbXXR63N08G4zxtFAHp6qtTJf2zrCplFXamEwpscDnjlpEb3da/exec",
   successMessage: "You're registered! Here's how to complete your payment:",
   paymentDetails: {
     online: {
